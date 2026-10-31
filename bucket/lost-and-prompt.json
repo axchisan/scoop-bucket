@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "description": "Find, organize and resume all your Claude Code sessions, from every folder.",
+    "homepage": "https://github.com/axchisan/lost-and-prompt",
+    "license": "MIT",
+    "notes": "Update with: scoop update lost-and-prompt",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v0.2.0/LostAndPrompt-0.2.0-windows-x64-setup.exe#/dl.7z",
+            "hash": "0e8ca2788c5f4d71e79c33e59e6ce595d8e0ae7d3ef0186daefef33ab82c4ba7"
+        }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
+    "shortcuts": [
+        [
+            "lost-and-prompt.exe",
+            "Lost & Prompt"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/axchisan/lost-and-prompt"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/LostAndPrompt-$version-windows-x64-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/SHA256SUMS.txt"
+        }
+    }
+}
