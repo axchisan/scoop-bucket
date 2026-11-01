@@ -1,33 +1,33 @@
 {
-    "version": "0.3.0",
-    "description": "Find, organize and resume all your Claude Code sessions, from every folder.",
-    "homepage": "https://github.com/axchisan/lost-and-prompt",
-    "license": "MIT",
-    "notes": "Update with: scoop update lost-and-prompt",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v0.3.0/LostAndPrompt-0.3.0-windows-x64-setup.exe#/dl.7z",
-            "hash": "42235332b30926db4c894522bf93c7d0465928be45b18e3310b1e193ed5ee6ea"
-        }
-    },
-    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
-    "shortcuts": [
-        [
-            "lost-and-prompt.exe",
-            "Lost & Prompt"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/axchisan/lost-and-prompt"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/LostAndPrompt-$version-windows-x64-setup.exe#/dl.7z"
-            }
-        },
-        "hash": {
-            "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/SHA256SUMS.txt"
-        }
+  "version": "0.4.0",
+  "description": "Find, organize and resume all your Claude Code sessions, from every folder.",
+  "homepage": "https://github.com/axchisan/lost-and-prompt",
+  "license": "MIT",
+  "notes": "Update with: scoop update lost-and-prompt",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v0.4.0/LostAndPrompt-0.4.0-windows-x64-setup.exe#/dl.7z",
+      "hash": "2025c8b00681f0ce4e3159d17a15c54a7e6f52b806f07072c694466c19083a33"
     }
+  },
+  "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue",
+  "shortcuts": [
+    [
+      "lost-and-prompt.exe",
+      "Lost & Prompt"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/axchisan/lost-and-prompt"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/LostAndPrompt-$version-windows-x64-setup.exe#/dl.7z"
+      }
+    },
+    "hash": {
+      "url": "https://github.com/axchisan/lost-and-prompt/releases/download/v$version/SHA256SUMS.txt"
+    }
+  }
 }
